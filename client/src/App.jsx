@@ -226,12 +226,7 @@ function App() {
         <nav className="top admin-nav">
           <div className="wrap nav-inner">
             <div className="logo">
-              <div className="logo-mark">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2 L22 7 V13 C22 17 17 21 12 22 C7 21 2 17 2 13 V7 Z" stroke="white" strokeWidth="2" fill="rgba(212,160,23,.15)" />
-                  <path d="M8 12 L11 15 L16 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
+              <img src="/logo.png" alt="Legal Admin" className="logo-img" />
               Legal <b>Admin</b>
             </div>
             <div className="nav-links">
@@ -355,28 +350,9 @@ function App() {
       <nav className={`top ${isMenuOpen ? 'menu-open' : ''}`}>
         <div className="wrap nav-inner">
           <div className="logo">
-            <div className="logo-mark">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <path d="M12 2 L22 7 V13 C22 17 17 21 12 22 C7 21 2 17 2 13 V7 Z" stroke="white" strokeWidth="2" fill="rgba(212,160,23,.15)" />
-                <path d="M8 12 L11 15 L16 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
+            <img src="/logo.png" alt="Legal Olympiad" className="logo-img" />
             Legal <b>Olympiad</b>
           </div>
-          <div className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
-            <a href="#philosophy" onClick={closeMenu}>Our Approach</a>
-            <a href="#courses" onClick={closeMenu}>Programmes</a>
-            <a href="#faq" onClick={closeMenu}>FAQ</a>
-            <a href="#admin" onClick={closeMenu}>Admin Portal</a>
-            <a href="#signup" className="nav-cta" onClick={closeMenu}><span className="pulse"></span>Join Waitlist</a>
-          </div>
-          <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
-            <div className={`hamburger ${isMenuOpen ? 'active' : ''}`}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
         </div>
       </nav>
 
@@ -853,12 +829,7 @@ function App() {
           <div className="foot-top">
             <div>
               <div className="logo">
-                <div className="logo-mark">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 2 L22 7 V13 C22 17 17 21 12 22 C7 21 2 17 2 13 V7 Z" stroke="white" strokeWidth="2" fill="rgba(212,160,23,.15)" />
-                    <path d="M8 12 L11 15 L16 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </div>
+                <img src="/logo.png" alt="Legal Olympiad" className="logo-img" />
                 Legal <b>Olympiad</b>
               </div>
               <p className="tag-line">Practitioner-led professional training for India's next generation of litigators. Inaugural cohort: June 2026.</p>
@@ -869,13 +840,6 @@ function App() {
               <a href="#courses">Drafting &amp; Conveyancing</a>
               <a href="#courses">Judgment Appreciation</a>
               <a href="#bundle">Complete Bundle</a>
-            </div>
-            <div>
-              <h5>Institution</h5>
-              <a href="#philosophy">Our Approach</a>
-              <a href="#faq">FAQ</a>
-              <a href="#">Faculty</a>
-              <a href="#">Brochure (PDF)</a>
             </div>
             <div>
               <h5>Contact</h5>
