@@ -1,0 +1,8 @@
+{
+  "name": "legal-olympiad-root",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm install --prefix client && npm install --prefix server && npm run build --prefix client && rm -rf server/public && mkdir -p server/public && cp -r client/dist/* server/public/",
+    "start": "node server/index.js"
+  }
+}

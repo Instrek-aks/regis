@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const path = require('path');
 require('dotenv').config();
 
 const Student = require('./models/Student');
@@ -15,6 +16,9 @@ app.use(express.json());
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/legal_olympiad')
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Endpoints
 app.get('/api/counts', async (req, res) => {
@@ -79,6 +83,12 @@ app.get('/api/admin/registrations', async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch registrations' });
   }
+});
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {
