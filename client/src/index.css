@@ -223,30 +223,6 @@ nav.top {
   animation: breathe 2s ease-in-out infinite;
 }
 
-.admin-nav-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 16px;
-  border-radius: 8px;
-  border: 1px solid var(--line-2);
-  background: var(--surface);
-  color: var(--text-2) !important;
-  font-size: 13px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: .2s;
-  box-shadow: 0 1px 3px rgba(15,23,42,.06);
-}
-
-.admin-nav-btn:hover {
-  background: var(--bg-2);
-  border-color: var(--line-3);
-  color: var(--ink) !important;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(15,23,42,.1);
-}
-
 /* Navigation drawer removed for simplified direct navbar */
 
 /* ============ HERO ============ */
